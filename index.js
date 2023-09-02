@@ -42,3 +42,22 @@ const propCalculator = {
 const {prop1, prop2, prop3, prop4, prop5} = propCalculator
 
 const sumaComponente = prop1 + prop2 + prop3 + prop4[2] + prop5[1];
+
+//Exercitii pentru "Array functions":
+//map:
+
+const listaNumereSuma = [15, 20, 50];
+
+const listaSuma = listaNumereSuma.map ((el) => el + el);
+
+//forEach:
+
+const listaNume = ["Costi", "Cezar", "Alexandra"];
+
+listaNume.forEach ((el) => console.log(el));
+
+//filter:
+
+listaNr = [3, 5, 4, 8, 9, 11];
+
+const listaNr = listaNr.filter ((el) => el % 2 !== 0);
