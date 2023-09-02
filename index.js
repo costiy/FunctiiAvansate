@@ -17,3 +17,28 @@ const doOperation = (x, y, suma) => suma (x, y);
 const suma1 = doOperation (50, 50, suma);
 
 console.log (suma1);
+
+//Exercitii pentru "Destructuration":
+
+//const propCalculator = {
+//	prop1: 20,
+//	prop2: 100,
+//	prop3: 540,
+//	prop4: [1, 7, 9],
+//	prop5: {a: "componenta1", b: "componenta2"},
+//}
+//const sumaComponente = propCalculator.prop1 + propCalculator.prop2 + propCalculator.prop3 + propCalculator.prop4 + propCalculator.prop5;
+
+//Forma destructurata va fi:
+
+const propCalculator = {
+    prop1: 20,
+    prop2: 100,
+    prop3: 540,
+    prop4: [1, 7, 9],
+    prop5: {a: "componenta1", b: "componenta2"},
+};
+
+const {prop1, prop2, prop3, prop4, prop5} = propCalculator
+
+const sumaComponente = prop1 + prop2 + prop3 + prop4[2] + prop5[1];
